@@ -1,0 +1,57 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #ff5f9e, #ff8ccf);
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+.container {
+  max-width: 700px;
+  margin: 100px auto;
+  text-align: center;
+  background: rgba(0,0,0,0.3);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h2 {
+  margin-top: 20px;
+  font-size: 2em;
+}
+
+.subtitle {
+  font-size: 1.2em;
+}
+
+.message {
+  margin-top: 20px;
+  font-size: 1.2em;
+  line-height: 1.6;
+}
+
+.from {
+  margin-top: 30px;
+  font-style: italic;
+}
+
+/* Hearts animation */
+.hearts::before {
+  content: "❤️ 💕 💖 💘 💝";
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  animation: float 10s linear infinite;
+  font-size: 2em;
+}
+
+@keyframes float {
+  from { transform: translateY(100vh); }
+  to { transform: translateY(-100vh); }
+}
