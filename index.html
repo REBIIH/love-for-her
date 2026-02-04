@@ -2,32 +2,52 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>For My sreekutty ❤️</title>
+  <title>For My Love ❤️</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="hearts"></div>
+<div class="hearts"></div>
 
-  <div class="container">
-    <h1>❤️ For My sreekutty ❤️</h1>
+<div class="container">
+  <h1 class="glow">❤️ For My Love ❤️</h1>
 
-    <p class="subtitle">
-      This little website is just to tell you one thing…
-    </p>
+  <h2 class="name">My Dearest 💖</h2>
 
-    <h2>I LOVE YOU 💕</h2>
+  <p class="subtitle">
+    I made this just for you…
+  </p>
 
-    <p class="message">
-      Every day I thank the universe for you.  
-      Even when we’re apart, you’re always in my heart.  
-      You’re my smile, my peace, my forever.  
-    </p>
+  <p class="message">
+    Every day I thank the universe for you.<br>
+    You are my calm in chaos, my smile in silence,<br>
+    and my forever in every lifetime.
+  </p>
 
-    <p class="from">
-      — Yours always ❤️
-    </p>
-  </div>
+  <button onclick="revealMessage()">Tap for a secret 💌</button>
+
+  <p id="secret" class="secret">
+    No distance, no time, no world could ever change how much I love you ❤️
+  </p>
+
+  <button onclick="playMusic()">Play our song 🎵</button>
+
+  <p class="from">— Yours always 💕</p>
+</div>
+
+<audio id="music" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  function revealMessage() {
+    document.getElementById("secret").style.display = "block";
+  }
+
+  function playMusic() {
+    document.getElementById("music").play();
+  }
+</script>
 
 </body>
 </html>
